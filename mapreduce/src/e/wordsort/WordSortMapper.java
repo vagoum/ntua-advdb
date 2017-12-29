@@ -16,7 +16,7 @@ public class WordSortMapper extends Mapper<LongWritable, Text, Text, NullWritabl
 	@Override
 	public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 		String inputLine = value.toString().toLowerCase();
-		inputLine = inputLine.replaceAll("[^a-z_]+", "");
+		inputLine = inputLine.replaceAll("[^a-z'0-9_]+", "");
 		String words[] = inputLine.split("_");
 		for (int i = 0; i < words.length; i++)
 			if (!words[i].isEmpty()) {

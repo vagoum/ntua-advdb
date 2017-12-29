@@ -15,6 +15,8 @@ public class ExtractWordsReducer  extends Reducer<Text, IntWritable, IntWritable
 
 		// Go through all values to sum up card values for a card suit
 		for (IntWritable value : values) {
+			if (value.get() == 0)
+				return;
 			sum += value.get();
 		}
 
