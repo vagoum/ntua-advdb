@@ -22,7 +22,8 @@ public class VisitMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 		String input = value.toString();
 		String[] arr = input.split("\t");
 		if (arr.length > 4 && input.contains("http")){
-			context.write(new Text(arr[5]), new IntWritable(1));
+			int id = Integer.parseInt(arr[0]);
+			context.write(new Text(arr[5]), new IntWritable(id));
 		}
 
 	}
