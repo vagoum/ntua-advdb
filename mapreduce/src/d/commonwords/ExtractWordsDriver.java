@@ -25,6 +25,7 @@ public class ExtractWordsDriver extends Configured implements Tool {
 			return -1;
 		}
 
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(ExtractWordsDriver.class);
 		job.setJobName(this.getClass().getName());
@@ -33,7 +34,6 @@ public class ExtractWordsDriver extends Configured implements Tool {
 		
 		FileOutputFormat.setOutputPath(job, new Path(output));
 
-		job.setMapperClass(ExtractWordsMapper.class);
 		job.setReducerClass(ExtractWordsReducer.class);
 
 		job.setMapOutputKeyClass(Text.class);

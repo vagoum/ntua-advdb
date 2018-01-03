@@ -2,7 +2,6 @@ package e.histogram;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
@@ -24,7 +23,8 @@ public class WordDistributionDriver extends Configured implements Tool {
 			System.err.println("Incorrect number of arguments.  Expected: input output");
 			return -1;
 		}
-
+		
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(WordDistributionDriver.class);
 		job.setJobName(this.getClass().getName());
@@ -40,7 +40,7 @@ public class WordDistributionDriver extends Configured implements Tool {
 		
 		job.setNumReduceTasks(27);
 		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(FloatWritable.class);
+		job.setOutputValueClass(Text.class);
 		boolean success = job.waitForCompletion(true);
 		return success ? 0 : 1;
 	}

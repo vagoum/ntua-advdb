@@ -1,4 +1,4 @@
-package a.month;
+package e.histogram_part_50;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
@@ -11,8 +11,7 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 
-
-public class MonthDriver extends Configured implements Tool {
+public class WordDistributionDriver extends Configured implements Tool {
 
 	@Override
 	public int run(String[] args) throws Exception {
@@ -26,28 +25,28 @@ public class MonthDriver extends Configured implements Tool {
 		}
 
 		@SuppressWarnings("deprecation")
-		Job job = new Job(getConf());
-		job.setJarByClass(MonthDriver.class);
+		Job job = new Job();
+		job.setJarByClass(WordDistributionDriver.class);
 		job.setJobName(this.getClass().getName());
 
 		FileInputFormat.setInputPaths(job, new Path(input));
 		FileOutputFormat.setOutputPath(job, new Path(output));
 
-		job.setMapperClass(MonthMapper.class);
-		job.setReducerClass(MonthReducer.class);
+		job.setMapperClass(WordDisributionMapper.class);
+		job.setReducerClass(WordDistributionReducer.class);
 
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(IntWritable.class);
-
+		
+		job.setNumReduceTasks(27);
 		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(IntWritable.class);
-
+		job.setOutputValueClass(Text.class);
 		boolean success = job.waitForCompletion(true);
 		return success ? 0 : 1;
 	}
 
 	public static void main(String[] args) throws Exception {
-		MonthDriver driver = new MonthDriver();
+		WordDistributionDriver driver = new WordDistributionDriver();
 		int exitCode = ToolRunner.run(driver, args);
 		System.exit(exitCode);
 	}

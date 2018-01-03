@@ -23,6 +23,8 @@ public class SortDriver extends Configured implements Tool {
 			System.err.println("Incorrect number of arguments.  Expected: input output");
 			return -1;
 		}
+		
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(SortDriver.class);
 		job.setJobName(this.getClass().getName());

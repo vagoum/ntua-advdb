@@ -27,7 +27,7 @@ public class JoinDriver extends Configured implements Tool {
 			return -1;
 		}
 
-
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(JoinDriver.class);
 		job.setJobName(this.getClass().getName());

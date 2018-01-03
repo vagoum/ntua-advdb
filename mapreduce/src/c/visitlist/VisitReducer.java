@@ -1,9 +1,8 @@
 package c.visitlist;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -16,16 +15,13 @@ public class VisitReducer  extends Reducer<Text, IntWritable, Text, IntWritable>
 			InterruptedException {
 		int sum = 0;
 
-		List<IntWritable> sortedList = new ArrayList<>();
-		for (IntWritable i : values) {
-		    sortedList.add(i);
-		}
+		Set<Integer> set = new HashSet<>();
 		
-		IntWritable tmp = new IntWritable(0);
-		for (IntWritable value : sortedList) {
-			if (tmp.get() != value.get())
+		for (IntWritable value : values) {
+			if (!set.contains(value.get())) {
 				sum++;
-			tmp.set(value.get());
+				set.add(value.get());
+			}
 		}
 
 		if (sum > 10)

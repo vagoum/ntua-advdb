@@ -5,13 +5,10 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
-
-import d.commonwords.SortDriver;
 
 public class WordSortDriver extends Configured implements Tool {
 
@@ -25,6 +22,8 @@ public class WordSortDriver extends Configured implements Tool {
 			System.err.println("Incorrect number of arguments.  Expected: input output");
 			return -1;
 		}
+		
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(WordSortDriver.class);
 		job.setJobName(this.getClass().getName());

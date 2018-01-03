@@ -25,6 +25,7 @@ public class VisitDriver extends Configured implements Tool {
 			return -1;
 		}
 
+		@SuppressWarnings("deprecation")
 		Job job = new Job(getConf());
 		job.setJarByClass(VisitDriver.class);
 		job.setJobName(this.getClass().getName());

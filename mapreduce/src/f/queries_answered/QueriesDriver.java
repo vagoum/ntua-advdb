@@ -28,6 +28,7 @@ public class QueriesDriver extends Configured implements Tool {
 			return -1;
 		}
 
+		@SuppressWarnings("deprecation")
 		Job job = new Job();
 		job.setJarByClass(QueriesDriver.class);
 		job.setJobName(this.getClass().getName());
@@ -36,7 +37,6 @@ public class QueriesDriver extends Configured implements Tool {
 		
 		FileOutputFormat.setOutputPath(job, new Path(output));
 
-		job.setMapperClass(QueriesMapper.class);
 		job.setReducerClass(QueriesReducer.class);
 
 		job.setMapOutputKeyClass(Text.class);

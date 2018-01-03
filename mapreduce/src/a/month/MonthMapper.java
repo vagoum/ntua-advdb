@@ -12,7 +12,6 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Mapper.Context;
 
 public class MonthMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
@@ -25,7 +24,6 @@ public class MonthMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 			try {
 				date = new SimpleDateFormat("yyyy-MM-dd").parse(m.group(1));
 			} catch (ParseException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			Calendar cal = Calendar.getInstance();
