@@ -29,7 +29,6 @@ public class VisitDriver extends Configured implements Tool {
 		Job job = new Job(getConf());
 		job.setJarByClass(VisitDriver.class);
 		job.setJobName(this.getClass().getName());
-
 		FileInputFormat.setInputPaths(job, new Path(input));
 		FileOutputFormat.setOutputPath(job, new Path(output));
 

@@ -26,7 +26,7 @@ public class CountReducer   extends Reducer<Text, LongWritable, Text, Text> {
 		Configuration conf = context.getConfiguration();
 		Cluster cluster = new Cluster(conf);
 		Job currentJob = cluster.getJob(context.getJobID());
-		counter = currentJob.getCounters().findCounter(CustomCounter.Success).getValue();
-		successful = context.getConfiguration().getLong(CustomCounter.Total.toString(), 0);
+		successful = currentJob.getCounters().findCounter(CustomCounter.Success).getValue();
+		counter = context.getConfiguration().getLong(CustomCounter.Total.toString(), 0);
 	}
 }

@@ -13,7 +13,6 @@ public class ExtractWordsReducer  extends Reducer<Text, IntWritable, IntWritable
 			InterruptedException {
 		int sum = 0;
 
-		// Go through all values to sum up card values for a card suit
 		for (IntWritable value : values) {
 			if (value.get() == 0)
 				return;
