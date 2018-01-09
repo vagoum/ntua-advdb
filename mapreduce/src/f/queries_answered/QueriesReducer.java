@@ -1,6 +1,8 @@
 package f.queries_answered;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -12,10 +14,15 @@ public class QueriesReducer  extends Reducer<Text, LongWritable, Text, LongWrita
 	@Override
 	public void reduce(Text key, Iterable<LongWritable> values, Context context) throws IOException, InterruptedException {
 
+		List<LongWritable> l = new ArrayList<>();
+		
 		for (LongWritable value : values) {
 			if (value.get() == 0)
 				return;
-			context.write(key, value);
+			l.add(new LongWritable(value.get()));
+		}
+		for (LongWritable v: l) {
+			context.write(key,v);
 		}
 	}
 }

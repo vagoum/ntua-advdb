@@ -15,10 +15,10 @@ public class QueriesMapper extends
 		context.getCounter(CustomCounter.Total).increment(1);
 		Long qid = context.getCounter(CustomCounter.Total).getValue();
 
-		String input = value.toString();
+		String input = value.toString().toLowerCase();
 		String[] arr = input.split("\t");
 		if (arr.length >= 2) {
-			String[] words = arr[1].split(" ");
+			String[] words = arr[1].split("\\s+");
 
 			for (String word : words) {
 				context.write(new Text(word), new LongWritable(qid));
