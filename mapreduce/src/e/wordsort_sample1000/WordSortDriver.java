@@ -77,7 +77,7 @@ public class WordSortDriver extends Configured implements Tool {
 
 		TotalOrderPartitioner.setPartitionFile(reduceJob.getConfiguration(),
 				partitionPath);
-		InputSampler.writePartitionFile(reduceJob,new InputSampler.SplitSampler(10));
+		InputSampler.writePartitionFile(reduceJob,new InputSampler.SplitSampler(1000));
 
 		return reduceJob.waitForCompletion(true) ? 0 : 2;
 
