@@ -7,8 +7,6 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import e.histogram.CustomCounter;
-
 public class SuccessMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
 	public static final String success = "Success";
