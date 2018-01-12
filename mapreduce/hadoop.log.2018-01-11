@@ -1,0 +1,698 @@
+2018-01-11 16:56:21,316 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 16:56:21,677 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 16:56:21,680 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 16:56:22,411 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 16:56:22,421 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 16:56:22,448 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2018-01-11 16:56:22,466 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2018-01-11 16:56:22,495 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:2
+2018-01-11 16:56:22,755 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local678158549_0001
+2018-01-11 16:56:23,238 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 16:56:23,241 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local678158549_0001
+2018-01-11 16:56:23,246 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 16:56:23,258 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:56:23,266 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 16:56:23,403 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 16:56:23,409 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local678158549_0001_m_000000_0
+2018-01-11 16:56:23,484 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:56:23,515 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:56:23,521 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input1.txt:0+42
+2018-01-11 16:56:23,671 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:56:23,671 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:56:23,672 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:56:23,672 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:56:23,672 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:56:23,680 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:56:23,692 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:56:23,692 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:56:23,692 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:56:23,692 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 51; bufvoid = 104857600
+2018-01-11 16:56:23,692 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:56:23,724 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:56:23,728 INFO org.apache.hadoop.mapred.Task: Task:attempt_local678158549_0001_m_000000_0 is done. And is in the process of committing
+2018-01-11 16:56:23,739 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:56:23,740 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local678158549_0001_m_000000_0' done.
+2018-01-11 16:56:23,740 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local678158549_0001_m_000000_0
+2018-01-11 16:56:23,740 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local678158549_0001_m_000001_0
+2018-01-11 16:56:23,741 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:56:23,742 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:56:23,743 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input2.txt:0+37
+2018-01-11 16:56:23,789 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:56:23,790 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:56:23,790 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:56:23,790 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:56:23,790 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:56:23,791 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:56:23,792 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:56:23,792 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:56:23,792 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:56:23,792 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 78; bufvoid = 104857600
+2018-01-11 16:56:23,792 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:56:23,794 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:56:23,795 INFO org.apache.hadoop.mapred.Task: Task:attempt_local678158549_0001_m_000001_0 is done. And is in the process of committing
+2018-01-11 16:56:23,797 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:56:23,797 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local678158549_0001_m_000001_0' done.
+2018-01-11 16:56:23,797 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local678158549_0001_m_000001_0
+2018-01-11 16:56:23,798 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 16:56:23,806 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 16:56:23,806 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local678158549_0001_r_000000_0
+2018-01-11 16:56:23,815 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:56:23,815 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:56:23,820 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3a807d14
+2018-01-11 16:56:23,837 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 16:56:23,844 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local678158549_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 16:56:23,899 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local678158549_0001_m_000001_0 decomp: 90 len: 94 to MEMORY
+2018-01-11 16:56:23,913 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 90 bytes from map-output for attempt_local678158549_0001_m_000001_0
+2018-01-11 16:56:23,951 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 90, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->90
+2018-01-11 16:56:23,979 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local678158549_0001_m_000000_0 decomp: 63 len: 67 to MEMORY
+2018-01-11 16:56:23,980 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 63 bytes from map-output for attempt_local678158549_0001_m_000000_0
+2018-01-11 16:56:23,981 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 63, inMemoryMapOutputs.size() -> 2, commitMemory -> 90, usedMemory ->153
+2018-01-11 16:56:23,981 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 16:56:23,981 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:56:23,981 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 16:56:23,991 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2018-01-11 16:56:23,993 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 141 bytes
+2018-01-11 16:56:23,994 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 2 segments, 153 bytes to disk to satisfy reduce memory limit
+2018-01-11 16:56:23,995 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 155 bytes from disk
+2018-01-11 16:56:23,998 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 16:56:23,998 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 16:56:23,999 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 148 bytes
+2018-01-11 16:56:23,999 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:56:24,021 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-01-11 16:56:24,026 INFO org.apache.hadoop.mapred.Task: Task:attempt_local678158549_0001_r_000000_0 is done. And is in the process of committing
+2018-01-11 16:56:24,028 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:56:24,028 INFO org.apache.hadoop.mapred.Task: Task attempt_local678158549_0001_r_000000_0 is allowed to commit now
+2018-01-11 16:56:24,029 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local678158549_0001_r_000000_0' to file:/home/cloudera/git/ntua-advdb/mapreduce/out/lalalalla/_temporary/0/task_local678158549_0001_r_000000
+2018-01-11 16:56:24,029 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 16:56:24,029 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local678158549_0001_r_000000_0' done.
+2018-01-11 16:56:24,029 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local678158549_0001_r_000000_0
+2018-01-11 16:56:24,029 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2018-01-11 16:56:24,243 INFO org.apache.hadoop.mapreduce.Job: Job job_local678158549_0001 running in uber mode : false
+2018-01-11 16:56:24,245 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2018-01-11 16:56:24,245 INFO org.apache.hadoop.mapreduce.Job: Job job_local678158549_0001 completed successfully
+2018-01-11 16:56:24,257 INFO org.apache.hadoop.mapreduce.Job: Counters: 34
+	File System Counters
+		FILE: Number of bytes read=3430
+		FILE: Number of bytes written=784589
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=10
+		Map output records=10
+		Map output bytes=129
+		Map output materialized bytes=161
+		Input split bytes=517
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=7
+		Reduce shuffle bytes=161
+		Reduce input records=10
+		Reduce output records=5
+		Spilled Records=20
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=50
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=591212544
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	f.answered.CustomCounter
+		Total=5
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=33
+2018-01-11 16:57:18,675 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 16:57:19,054 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 16:57:19,057 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 16:57:19,155 WARN org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:cloudera (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4 already exists
+2018-01-11 16:57:58,776 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 16:57:59,116 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 16:57:59,119 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 16:57:59,862 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 16:57:59,872 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 16:57:59,907 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 2
+2018-01-11 16:57:59,948 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:2
+2018-01-11 16:58:00,211 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1742262214_0001
+2018-01-11 16:58:00,688 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 16:58:00,689 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1742262214_0001
+2018-01-11 16:58:00,696 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 16:58:00,711 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:00,720 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 16:58:00,852 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 16:58:00,859 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1742262214_0001_m_000000_0
+2018-01-11 16:58:00,903 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:00,922 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:00,927 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input1.txt:0+42
+2018-01-11 16:58:01,083 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:58:01,089 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:58:01,089 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:58:01,089 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:58:01,089 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:58:01,092 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:58:01,101 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:58:01,102 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:58:01,102 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:58:01,102 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 41; bufvoid = 104857600
+2018-01-11 16:58:01,103 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:58:01,113 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:58:01,116 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1742262214_0001_m_000000_0 is done. And is in the process of committing
+2018-01-11 16:58:01,123 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:58:01,124 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1742262214_0001_m_000000_0' done.
+2018-01-11 16:58:01,124 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1742262214_0001_m_000000_0
+2018-01-11 16:58:01,124 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1742262214_0001_m_000001_0
+2018-01-11 16:58:01,125 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:01,125 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:01,126 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input2.txt:0+37
+2018-01-11 16:58:01,170 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:58:01,171 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:58:01,171 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:58:01,171 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:58:01,171 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:58:01,171 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:58:01,174 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:58:01,174 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:58:01,174 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:58:01,174 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 36; bufvoid = 104857600
+2018-01-11 16:58:01,174 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:58:01,176 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:58:01,177 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1742262214_0001_m_000001_0 is done. And is in the process of committing
+2018-01-11 16:58:01,179 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:58:01,179 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1742262214_0001_m_000001_0' done.
+2018-01-11 16:58:01,179 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1742262214_0001_m_000001_0
+2018-01-11 16:58:01,179 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 16:58:01,181 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 16:58:01,181 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1742262214_0001_r_000000_0
+2018-01-11 16:58:01,191 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:01,191 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:01,194 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@42bed1e7
+2018-01-11 16:58:01,209 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 16:58:01,216 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1742262214_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 16:58:01,281 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1742262214_0001_m_000001_0 decomp: 48 len: 52 to MEMORY
+2018-01-11 16:58:01,314 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 48 bytes from map-output for attempt_local1742262214_0001_m_000001_0
+2018-01-11 16:58:01,376 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 48, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->48
+2018-01-11 16:58:01,381 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1742262214_0001_m_000000_0 decomp: 53 len: 57 to MEMORY
+2018-01-11 16:58:01,382 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 53 bytes from map-output for attempt_local1742262214_0001_m_000000_0
+2018-01-11 16:58:01,383 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 53, inMemoryMapOutputs.size() -> 2, commitMemory -> 48, usedMemory ->101
+2018-01-11 16:58:01,383 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 16:58:01,384 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:58:01,384 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 16:58:01,402 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2018-01-11 16:58:01,405 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 89 bytes
+2018-01-11 16:58:01,405 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 2 segments, 101 bytes to disk to satisfy reduce memory limit
+2018-01-11 16:58:01,406 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 103 bytes from disk
+2018-01-11 16:58:01,407 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 16:58:01,409 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 16:58:01,409 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 93 bytes
+2018-01-11 16:58:01,414 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:58:01,432 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-01-11 16:58:01,440 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1742262214_0001_r_000000_0 is done. And is in the process of committing
+2018-01-11 16:58:01,445 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:58:01,446 INFO org.apache.hadoop.mapred.Task: Task attempt_local1742262214_0001_r_000000_0 is allowed to commit now
+2018-01-11 16:58:01,447 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1742262214_0001_r_000000_0' to file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4/_temporary/0/task_local1742262214_0001_r_000000
+2018-01-11 16:58:01,449 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 16:58:01,449 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1742262214_0001_r_000000_0' done.
+2018-01-11 16:58:01,449 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1742262214_0001_r_000000_0
+2018-01-11 16:58:01,450 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2018-01-11 16:58:01,691 INFO org.apache.hadoop.mapreduce.Job: Job job_local1742262214_0001 running in uber mode : false
+2018-01-11 16:58:01,693 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2018-01-11 16:58:01,695 INFO org.apache.hadoop.mapreduce.Job: Job job_local1742262214_0001 completed successfully
+2018-01-11 16:58:01,718 INFO org.apache.hadoop.mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=1958
+		FILE: Number of bytes written=785460
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=10
+		Map output records=10
+		Map output bytes=77
+		Map output materialized bytes=109
+		Input split bytes=248
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=109
+		Reduce input records=10
+		Reduce output records=0
+		Spilled Records=20
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=52
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=591212544
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=79
+	File Output Format Counters 
+		Bytes Written=8
+2018-01-11 16:58:01,769 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+2018-01-11 16:58:01,783 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 16:58:01,790 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 16:58:01,835 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2018-01-11 16:58:01,869 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2018-01-11 16:58:01,945 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1402261631_0002
+2018-01-11 16:58:02,267 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 16:58:02,267 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1402261631_0002
+2018-01-11 16:58:02,268 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 16:58:02,268 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:02,269 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 16:58:02,281 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 16:58:02,281 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1402261631_0002_m_000000_0
+2018-01-11 16:58:02,288 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:02,289 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:02,290 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4/part-r-00000:0+0
+2018-01-11 16:58:02,365 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:58:02,367 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:58:02,367 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:58:02,367 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:58:02,367 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:58:02,375 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:58:02,377 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:58:02,377 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:58:02,379 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1402261631_0002_m_000000_0 is done. And is in the process of committing
+2018-01-11 16:58:02,381 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:58:02,381 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1402261631_0002_m_000000_0' done.
+2018-01-11 16:58:02,381 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1402261631_0002_m_000000_0
+2018-01-11 16:58:02,381 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 16:58:02,382 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 16:58:02,382 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1402261631_0002_r_000000_0
+2018-01-11 16:58:02,383 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:02,384 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:02,384 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@31bf03aa
+2018-01-11 16:58:02,384 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 16:58:02,385 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1402261631_0002_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 16:58:02,386 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#2 about to shuffle output of map attempt_local1402261631_0002_m_000000_0 decomp: 2 len: 6 to MEMORY
+2018-01-11 16:58:02,387 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1402261631_0002_m_000000_0
+2018-01-11 16:58:02,387 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->2
+2018-01-11 16:58:02,388 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 16:58:02,388 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 16:58:02,388 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 16:58:02,390 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 16:58:02,390 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+2018-01-11 16:58:02,390 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 2 bytes to disk to satisfy reduce memory limit
+2018-01-11 16:58:02,391 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 6 bytes from disk
+2018-01-11 16:58:02,391 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 16:58:02,391 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 16:58:02,392 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+2018-01-11 16:58:02,392 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 16:58:02,398 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1402261631_0002_r_000000_0 is done. And is in the process of committing
+2018-01-11 16:58:02,401 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 16:58:02,401 INFO org.apache.hadoop.mapred.Task: Task attempt_local1402261631_0002_r_000000_0 is allowed to commit now
+2018-01-11 16:58:02,404 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1402261631_0002_r_000000_0' to file:/home/cloudera/git/ntua-advdb/mapreduce/out/alalaal/_temporary/0/task_local1402261631_0002_r_000000
+2018-01-11 16:58:02,405 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 16:58:02,405 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1402261631_0002_r_000000_0' done.
+2018-01-11 16:58:02,405 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1402261631_0002_r_000000_0
+2018-01-11 16:58:02,406 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2018-01-11 16:58:03,268 INFO org.apache.hadoop.mapreduce.Job: Job job_local1402261631_0002 running in uber mode : false
+2018-01-11 16:58:03,268 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2018-01-11 16:58:03,268 INFO org.apache.hadoop.mapreduce.Job: Job job_local1402261631_0002 completed successfully
+2018-01-11 16:58:03,272 INFO org.apache.hadoop.mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=2278
+		FILE: Number of bytes written=1046720
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=0
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=127
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=46
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=395190272
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=8
+	File Output Format Counters 
+		Bytes Written=8
+2018-01-11 16:58:33,407 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 16:58:33,775 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 16:58:33,779 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 16:58:37,745 WARN org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:cloudera (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4 already exists
+2018-01-11 16:58:54,014 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 16:58:54,375 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 16:58:54,378 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 16:58:55,172 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 16:58:55,188 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 16:58:55,227 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 2
+2018-01-11 16:58:55,330 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:2
+2018-01-11 16:58:55,628 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1286822700_0001
+2018-01-11 16:58:56,181 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 16:58:56,182 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1286822700_0001
+2018-01-11 16:58:56,192 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 16:58:56,208 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:56,216 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 16:58:56,376 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 16:58:56,379 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1286822700_0001_m_000000_0
+2018-01-11 16:58:56,450 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:58:56,500 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:58:56,514 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input1.txt:0+42
+2018-01-11 16:58:56,656 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:58:56,656 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:58:56,656 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:58:56,656 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:58:56,656 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:58:56,662 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:58:57,185 INFO org.apache.hadoop.mapreduce.Job: Job job_local1286822700_0001 running in uber mode : false
+2018-01-11 16:58:57,187 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2018-01-11 16:59:02,464 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2018-01-11 16:59:03,191 INFO org.apache.hadoop.mapreduce.Job:  map 6% reduce 0%
+2018-01-11 16:59:11,465 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2018-01-11 16:59:12,194 INFO org.apache.hadoop.mapreduce.Job:  map 13% reduce 0%
+2018-01-11 16:59:15,072 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2018-01-11 16:59:15,072 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:59:15,072 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:59:15,072 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 41; bufvoid = 104857600
+2018-01-11 16:59:15,073 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:59:15,098 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:59:15,114 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1286822700_0001_m_000000_0 is done. And is in the process of committing
+2018-01-11 16:59:15,120 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:59:15,121 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1286822700_0001_m_000000_0' done.
+2018-01-11 16:59:15,121 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1286822700_0001_m_000000_0
+2018-01-11 16:59:15,121 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1286822700_0001_m_000001_0
+2018-01-11 16:59:15,127 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:59:15,127 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:59:15,133 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input2.txt:0+37
+2018-01-11 16:59:15,196 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 0%
+2018-01-11 16:59:15,228 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 16:59:15,229 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 16:59:15,229 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 16:59:15,229 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 16:59:15,229 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 16:59:15,238 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 16:59:18,816 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 16:59:18,816 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 16:59:18,816 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 16:59:18,816 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 36; bufvoid = 104857600
+2018-01-11 16:59:18,816 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 16:59:18,821 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 16:59:18,823 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1286822700_0001_m_000001_0 is done. And is in the process of committing
+2018-01-11 16:59:18,828 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 16:59:18,829 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1286822700_0001_m_000001_0' done.
+2018-01-11 16:59:18,830 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1286822700_0001_m_000001_0
+2018-01-11 16:59:18,831 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 16:59:18,835 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 16:59:18,837 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1286822700_0001_r_000000_0
+2018-01-11 16:59:18,863 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 16:59:18,864 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 16:59:18,882 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@54fbb14
+2018-01-11 16:59:18,937 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 16:59:18,957 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1286822700_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 16:59:19,075 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1286822700_0001_m_000001_0 decomp: 48 len: 52 to MEMORY
+2018-01-11 16:59:19,112 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 48 bytes from map-output for attempt_local1286822700_0001_m_000001_0
+2018-01-11 16:59:19,207 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 48, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->48
+2018-01-11 16:59:19,220 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1286822700_0001_m_000000_0 decomp: 53 len: 57 to MEMORY
+2018-01-11 16:59:19,223 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 53 bytes from map-output for attempt_local1286822700_0001_m_000000_0
+2018-01-11 16:59:19,225 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 53, inMemoryMapOutputs.size() -> 2, commitMemory -> 48, usedMemory ->101
+2018-01-11 16:59:19,225 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 16:59:19,229 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:59:19,229 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 16:59:19,254 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2018-01-11 16:59:19,259 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 89 bytes
+2018-01-11 16:59:19,261 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 2 segments, 101 bytes to disk to satisfy reduce memory limit
+2018-01-11 16:59:19,264 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 103 bytes from disk
+2018-01-11 16:59:19,268 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 16:59:19,270 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 16:59:19,272 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 93 bytes
+2018-01-11 16:59:19,277 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 16:59:19,320 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-01-11 16:59:24,868 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 16:59:25,200 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 72%
+2018-01-11 16:59:30,869 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 16:59:31,202 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 76%
+2018-01-11 17:00:00,870 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 17:00:01,216 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 79%
+2018-01-11 17:00:23,459 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-01-11 17:00:23,845 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-01-11 17:00:23,849 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-01-11 17:00:24,832 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 17:00:24,846 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 17:00:24,865 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 2
+2018-01-11 17:00:24,908 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:2
+2018-01-11 17:00:25,179 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local12390406_0001
+2018-01-11 17:00:25,651 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 17:00:25,652 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local12390406_0001
+2018-01-11 17:00:25,659 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 17:00:25,674 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:25,681 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 17:00:25,815 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 17:00:25,822 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local12390406_0001_m_000000_0
+2018-01-11 17:00:25,871 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:25,889 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 17:00:25,892 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input1.txt:0+42
+2018-01-11 17:00:26,043 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 17:00:26,043 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 17:00:26,043 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 17:00:26,043 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 17:00:26,043 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 17:00:26,047 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 17:00:26,059 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 17:00:26,059 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 17:00:26,059 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 17:00:26,060 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 41; bufvoid = 104857600
+2018-01-11 17:00:26,060 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 17:00:26,076 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 17:00:26,079 INFO org.apache.hadoop.mapred.Task: Task:attempt_local12390406_0001_m_000000_0 is done. And is in the process of committing
+2018-01-11 17:00:26,085 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 17:00:26,085 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local12390406_0001_m_000000_0' done.
+2018-01-11 17:00:26,085 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local12390406_0001_m_000000_0
+2018-01-11 17:00:26,085 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local12390406_0001_m_000001_0
+2018-01-11 17:00:26,086 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:26,086 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 17:00:26,088 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/out/input2.txt:0+37
+2018-01-11 17:00:26,129 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 17:00:26,129 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 17:00:26,129 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 17:00:26,129 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 17:00:26,130 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 17:00:26,130 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 17:00:26,132 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 17:00:26,132 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 17:00:26,132 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 17:00:26,132 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 36; bufvoid = 104857600
+2018-01-11 17:00:26,132 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 17:00:26,134 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 17:00:26,135 INFO org.apache.hadoop.mapred.Task: Task:attempt_local12390406_0001_m_000001_0 is done. And is in the process of committing
+2018-01-11 17:00:26,136 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 17:00:26,136 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local12390406_0001_m_000001_0' done.
+2018-01-11 17:00:26,136 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local12390406_0001_m_000001_0
+2018-01-11 17:00:26,137 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 17:00:26,140 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 17:00:26,140 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local12390406_0001_r_000000_0
+2018-01-11 17:00:26,150 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:26,151 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 17:00:26,155 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3674b9ed
+2018-01-11 17:00:26,165 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 17:00:26,172 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local12390406_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 17:00:26,228 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local12390406_0001_m_000001_0 decomp: 48 len: 52 to MEMORY
+2018-01-11 17:00:26,237 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 48 bytes from map-output for attempt_local12390406_0001_m_000001_0
+2018-01-11 17:00:26,312 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 48, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->48
+2018-01-11 17:00:26,317 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local12390406_0001_m_000000_0 decomp: 53 len: 57 to MEMORY
+2018-01-11 17:00:26,320 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 53 bytes from map-output for attempt_local12390406_0001_m_000000_0
+2018-01-11 17:00:26,320 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 53, inMemoryMapOutputs.size() -> 2, commitMemory -> 48, usedMemory ->101
+2018-01-11 17:00:26,321 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 17:00:26,321 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 17:00:26,321 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 17:00:26,330 INFO org.apache.hadoop.mapred.Merger: Merging 2 sorted segments
+2018-01-11 17:00:26,331 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 89 bytes
+2018-01-11 17:00:26,333 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 2 segments, 101 bytes to disk to satisfy reduce memory limit
+2018-01-11 17:00:26,333 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 103 bytes from disk
+2018-01-11 17:00:26,335 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 17:00:26,335 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 17:00:26,335 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 93 bytes
+2018-01-11 17:00:26,336 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 17:00:26,348 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-01-11 17:00:26,359 INFO org.apache.hadoop.mapred.Task: Task:attempt_local12390406_0001_r_000000_0 is done. And is in the process of committing
+2018-01-11 17:00:26,365 INFO org.apache.hadoop.mapred.LocalJobRunner: 2 / 2 copied.
+2018-01-11 17:00:26,366 INFO org.apache.hadoop.mapred.Task: Task attempt_local12390406_0001_r_000000_0 is allowed to commit now
+2018-01-11 17:00:26,368 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local12390406_0001_r_000000_0' to file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4/_temporary/0/task_local12390406_0001_r_000000
+2018-01-11 17:00:26,371 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 17:00:26,373 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local12390406_0001_r_000000_0' done.
+2018-01-11 17:00:26,373 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local12390406_0001_r_000000_0
+2018-01-11 17:00:26,373 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2018-01-11 17:00:26,654 INFO org.apache.hadoop.mapreduce.Job: Job job_local12390406_0001 running in uber mode : false
+2018-01-11 17:00:26,655 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2018-01-11 17:00:26,656 INFO org.apache.hadoop.mapreduce.Job: Job job_local12390406_0001 completed successfully
+2018-01-11 17:00:26,680 INFO org.apache.hadoop.mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=1958
+		FILE: Number of bytes written=777158
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=10
+		Map output records=10
+		Map output bytes=77
+		Map output materialized bytes=109
+		Input split bytes=248
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=109
+		Reduce input records=10
+		Reduce output records=5
+		Spilled Records=20
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=59
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=591212544
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=79
+	File Output Format Counters 
+		Bytes Written=22
+2018-01-11 17:00:26,736 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+2018-01-11 17:00:26,756 WARN org.apache.hadoop.mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-01-11 17:00:26,768 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-01-11 17:00:26,790 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2018-01-11 17:00:26,823 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2018-01-11 17:00:26,897 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1278323659_0002
+2018-01-11 17:00:27,148 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-01-11 17:00:27,149 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1278323659_0002
+2018-01-11 17:00:27,154 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2018-01-11 17:00:27,155 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:27,156 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-01-11 17:00:27,167 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2018-01-11 17:00:27,167 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1278323659_0002_m_000000_0
+2018-01-11 17:00:27,173 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:27,173 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 17:00:27,175 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/cloudera/git/ntua-advdb/mapreduce/tmp4/part-r-00000:0+10
+2018-01-11 17:00:27,259 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-01-11 17:00:27,261 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-01-11 17:00:27,261 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-01-11 17:00:27,261 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-01-11 17:00:27,261 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-01-11 17:00:27,266 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-01-11 17:00:27,268 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2018-01-11 17:00:27,268 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-01-11 17:00:27,268 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-01-11 17:00:27,268 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 10; bufvoid = 104857600
+2018-01-11 17:00:27,268 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214380(104857520); length = 17/6553600
+2018-01-11 17:00:27,274 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-01-11 17:00:27,279 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1278323659_0002_m_000000_0 is done. And is in the process of committing
+2018-01-11 17:00:27,284 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2018-01-11 17:00:27,285 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1278323659_0002_m_000000_0' done.
+2018-01-11 17:00:27,285 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1278323659_0002_m_000000_0
+2018-01-11 17:00:27,286 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2018-01-11 17:00:27,291 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2018-01-11 17:00:27,291 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1278323659_0002_r_000000_0
+2018-01-11 17:00:27,298 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-01-11 17:00:27,299 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-01-11 17:00:27,299 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@c61a8f8
+2018-01-11 17:00:27,303 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=679778688, maxSingleShuffleLimit=169944672, mergeThreshold=448653952, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-01-11 17:00:27,314 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1278323659_0002_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-01-11 17:00:27,318 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#2 about to shuffle output of map attempt_local1278323659_0002_m_000000_0 decomp: 22 len: 26 to MEMORY
+2018-01-11 17:00:27,320 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 22 bytes from map-output for attempt_local1278323659_0002_m_000000_0
+2018-01-11 17:00:27,322 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 22, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->22
+2018-01-11 17:00:27,323 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-01-11 17:00:27,323 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 17:00:27,324 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-01-11 17:00:27,325 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 17:00:27,325 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 18 bytes
+2018-01-11 17:00:27,326 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 22 bytes to disk to satisfy reduce memory limit
+2018-01-11 17:00:27,326 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 26 bytes from disk
+2018-01-11 17:00:27,326 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-01-11 17:00:27,326 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2018-01-11 17:00:27,326 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 18 bytes
+2018-01-11 17:00:27,327 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 17:00:27,344 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1278323659_0002_r_000000_0 is done. And is in the process of committing
+2018-01-11 17:00:27,345 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2018-01-11 17:00:27,345 INFO org.apache.hadoop.mapred.Task: Task attempt_local1278323659_0002_r_000000_0 is allowed to commit now
+2018-01-11 17:00:27,346 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1278323659_0002_r_000000_0' to file:/home/cloudera/git/ntua-advdb/mapreduce/out/alalaal/_temporary/0/task_local1278323659_0002_r_000000
+2018-01-11 17:00:27,347 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2018-01-11 17:00:27,348 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1278323659_0002_r_000000_0' done.
+2018-01-11 17:00:27,349 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1278323659_0002_r_000000_0
+2018-01-11 17:00:27,349 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2018-01-11 17:00:28,150 INFO org.apache.hadoop.mapreduce.Job: Job job_local1278323659_0002 running in uber mode : false
+2018-01-11 17:00:28,150 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2018-01-11 17:00:28,150 INFO org.apache.hadoop.mapreduce.Job: Job job_local1278323659_0002 completed successfully
+2018-01-11 17:00:28,153 INFO org.apache.hadoop.mapreduce.Job: Counters: 33
+	File System Counters
+		FILE: Number of bytes read=2382
+		FILE: Number of bytes written=1041292
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Map output bytes=10
+		Map output materialized bytes=26
+		Input split bytes=127
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=26
+		Reduce input records=5
+		Reduce output records=2
+		Spilled Records=10
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=42
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=395190272
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30
+	File Output Format Counters 
+		Bytes Written=16
