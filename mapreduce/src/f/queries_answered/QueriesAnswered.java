@@ -18,30 +18,24 @@ public class QueriesAnswered {
 			System.exit(-1);
 		}
 		
-		String intermediatePathQueries = new String("./tmp1");
-		String arr[] = new String[3];
+		String joinPath = new String("./joinPath");
+		String arr[] = new String[4];
 		arr[0] = queries;
 		arr[1] = stop;
-		arr[2] = intermediatePathQueries;
-		
-		QueriesDriver queriesDriver = new QueriesDriver();
-		queriesDriver.run(arr);
-		
-		String intermediatePathIds = new String("./tmp3");
-		String arr2[] = new String[3];
-		arr2[0] = titles;
-		arr2[1] = intermediatePathQueries;
-		arr2[2] = intermediatePathIds;
-		
+		arr[2] = titles;
+		arr[3] = joinPath;
+				
 		JoinDriver joinDriver = new JoinDriver();
-		joinDriver.run(arr2);
+		joinDriver.run(arr);
 		
-		String arr3[] = new String[2];
-		arr3[0] = intermediatePathIds;
-		arr3[1] = output;
+		String qidsFile = new String("./qidsFile");
+		String arr1[] = new String[2];
+		arr1[0] = joinPath;
+		arr1[1] = qidsFile;
 		
-		CountDriver countDriver = new CountDriver();
-		countDriver.run(arr3);
+		RemoveDuplicatesDriver rduplicatesDriver = new RemoveDuplicatesDriver();
+		rduplicatesDriver.run(arr1);
+		
 	}
 
 }

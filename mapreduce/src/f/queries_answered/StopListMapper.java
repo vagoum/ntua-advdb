@@ -7,7 +7,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class StopListMapper extends Mapper<LongWritable, Text, Text, LongWritable> {
+public class StopListMapper extends Mapper<LongWritable, Text, Text, Text> {
 
 	@Override
 	public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
@@ -16,6 +16,6 @@ public class StopListMapper extends Mapper<LongWritable, Text, Text, LongWritabl
 		String words[] = inputLine.split("_");
 		for (int i = 0; i < words.length; i++)
 			if (!words[i].isEmpty())
-				context.write(new Text(words[i]), new LongWritable(0));
+				context.write(new Text(words[i]), new Text("stop"));
 	}
 }

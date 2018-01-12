@@ -9,7 +9,6 @@ import org.apache.hadoop.mapreduce.Cluster;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import e.histogram.CustomCounter;
 
 public class SuccessReducer  extends Reducer<Text, IntWritable, Text, Text> {
 

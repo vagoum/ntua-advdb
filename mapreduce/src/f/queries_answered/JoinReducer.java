@@ -9,29 +9,26 @@ import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class JoinReducer extends
-		Reducer<Text, LongWritable, LongWritable, NullWritable> {
-
+public class JoinReducer  extends Reducer<Text, Text, Text, NullWritable> {
 
 
 	@Override
-	public void reduce(Text key, Iterable<LongWritable> values, Context context)
-			throws IOException, InterruptedException {
-		List<LongWritable> l = new ArrayList<>();
-		boolean flag = false;
+	public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 
-		for (LongWritable value : values) {
-			if (value.get() == -1) {
-				flag = true;
-			} else {
-				l.add(new LongWritable(value.get()));
+		List<Text> l = new ArrayList<>();
+		boolean inTitle = false;
+		for (Text value : values) {
+			if (value.toString().equals("stop"))
+				return;
+			else if (value.toString().equals("wiki")) {
+				inTitle = true;
 			}
+			else
+				l.add(new Text(value.toString()));
 		}
-
-		if (flag) {
-			for (LongWritable lgw : l) {
-				context.write(lgw, NullWritable.get());
+		if (inTitle)
+			for (Text v: l) {
+				context.write(v, NullWritable.get());
 			}
-		}
 	}
 }
